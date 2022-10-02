@@ -1,3 +1,24 @@
-h1{
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+h1 {
   border: 1px solid #000;
+}
+
+h2 {
+  border: 1px solid #000;
+}
+
+h1 {
+  background-color: aqua;
+}
+
+h3 {
+  color: red;
+}
+h4{
+  color: blue;
 }
