@@ -1,15 +1,17 @@
-
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
-h1{
+h1 {
   border: 1px solid #000;
 }
 
-h2{
+h2 {
   border: 1px solid #000;
 }
 
+body {
+  background-color: antiquewhite;
+}
