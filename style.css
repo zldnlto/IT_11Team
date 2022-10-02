@@ -4,14 +4,18 @@
   box-sizing: border-box;
 }
 
-h1{
+h1 {
   border: 1px solid #000;
 }
 
-h2{
+h2 {
   border: 1px solid #000;
 }
 
-h1{
+h1 {
   background-color: aqua;
+}
+
+h3 {
+  color: red;
 }
