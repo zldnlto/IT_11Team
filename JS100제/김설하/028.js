@@ -8,4 +8,4 @@ function make2gram(str) {
 
 //test
 
-make2gran("Javascript");
+make2gram("Javascript");
