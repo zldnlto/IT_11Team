@@ -7,3 +7,4 @@ function circleArea(n) {
 //test
 circleArea(1); //3.141592653589793
 circleArea(3); // 28.274333882308138
+circleArea(10); // 314.1592653589793
