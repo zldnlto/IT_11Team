@@ -1,6 +1,6 @@
 const str = prompt('input')
 const val = str.split('')
-for (let i = 0; i < val.length; i++) {
+for (let i = 0; i < val.length-1; i++) {
   console.log(`${val[i]} ${val[i+1]}`);
 }
 
