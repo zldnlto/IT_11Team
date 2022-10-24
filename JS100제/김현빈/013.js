@@ -41,5 +41,5 @@ const 행성 = [
   "천왕성",
   "해왕성",
 ];
-const num = prompt("몇 번째 행성인가요?(1 ~ 8의 숫자를 입력해 주세요)");
-console.log(행성[num - 1]);
+const num2 = prompt("몇 번째 행성인가요?(1 ~ 8의 숫자를 입력해 주세요)");
+console.log(행성[num2 - 1]);
