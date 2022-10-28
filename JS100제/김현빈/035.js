@@ -19,4 +19,19 @@
 // console.log(b(10));
 // console.log(c(10));
 
-// 풀어서 다시 올릴 예정!
+// 답 :
+
+function one(a) {
+  function two(b) {
+    return Math.pow(b, a);
+  }
+  return two;
+}
+
+const a = one(2);
+const b = one(3);
+const c = one(4);
+
+console.log(a(10));
+console.log(b(10));
+console.log(c(10));
