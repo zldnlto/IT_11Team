@@ -7,3 +7,14 @@
 
 // 출력
 // 혜원(이)가 총 4표로 반장이 되었습니다.
+
+let name = prompt("학생들이 뽑은 후보들").split(" ");
+function 반장선거(name) {
+  let obj = {};
+  for (let n of name) {
+    obj[n] = obj[n] ? obj[n] + 1 : 1;
+  }
+  const max = Math.max(...Object.values(obj));
+  const candidate = Object.keys(obj).filter((item) => obj[item] === max);
+  return `${candidate}(이)가 총 ${max}표로 반장이 되었습니다`;
+}
