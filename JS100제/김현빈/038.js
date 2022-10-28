@@ -9,3 +9,38 @@
 
 // 입력 : 97 86 75 66 55 97 85 97 97 95
 // 출력 : 6
+
+// 답 1)
+let scoreArr = prompt("학생들의 점수").split(" ");
+function candy(scoreArr) {
+  let obj = {};
+  for (let n of scoreArr) {
+    obj[n] = obj[n] ? obj[n] + 1 : 1;
+  }
+  let keys = Object.keys(obj)
+    .map((item) => parseInt(item))
+    .sort((a, b) => b - a);
+  let first = keys[0];
+  let second = keys[1];
+  let third = keys[2];
+  return obj[first] + obj[second] + obj[third];
+}
+
+// 답 2)
+let scoreArr2 = prompt("학생들의 점수").split(" ");
+function candy(scoreArr2) {
+  let obj = {};
+  for (let n of scoreArr2) {
+    obj[n] = obj[n] ? obj[n] + 1 : 1;
+  }
+
+  let keys = Object.keys(obj)
+    .map((item) => parseInt(item))
+    .sort((a, b) => b - a);
+
+  let top3 = [];
+  for (let i = 0; i < 3; i++) {
+    top3.push(obj[keys[i]]);
+  }
+  return top3.reduce((a, b) => a + b);
+}
