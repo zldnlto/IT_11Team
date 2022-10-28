@@ -18,3 +18,23 @@
 
 // 출력
 // 2
+
+let limit = +prompt("제한 몸무게");
+let n = prompt("친구 수");
+let arr = [];
+for (let i = 0; i < n; i++) {
+  arr.push(prompt("몸무게 입력"));
+}
+let numArr = arr.map((item) => parseInt(item));
+
+let total = 0;
+let count = 0;
+function limitCount(numArr) {
+  for (let num of numArr) {
+    total += num;
+    if (total <= limit) {
+      count += 1;
+    }
+  }
+  return count;
+}
