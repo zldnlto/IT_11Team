@@ -33,8 +33,10 @@ function limitCount(numArr) {
   for (let num of numArr) {
     total += num;
     if (total <= limit) {
-      count += 1;
+      count++;
     }
   }
   return count;
 }
+
+limitCount(numArr);
