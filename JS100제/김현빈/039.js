@@ -14,3 +14,12 @@
 
 // 입력 : hqllo my namq is hyqwon
 // 출력 : hello my name is hyewon
+
+let str = prompt("입력");
+
+function changeEtoQ(str) {
+  let changeStr = str.replace(/q/g, "e");
+  return changeStr;
+}
+
+changeEtoQ(str);
