@@ -17,7 +17,7 @@ const people = {
 
 // 1)
 let set = new Set();
-set = people; // 이렇게 하면 set이 object가 됨,,,
+set = people; // 이렇게 하면 set이 object가 됨...
 console.log(Object.keys(set).length);
 
 // 2)
