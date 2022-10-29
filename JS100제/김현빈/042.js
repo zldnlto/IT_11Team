@@ -11,12 +11,12 @@
 // 2020년 a월 b일은 실제로 있는 날입니다.
 // (13월 26일이나 2월 45일 같은 날짜는 주어지지 않습니다.)
 
-let month = prompt("월 입력");
-let day = prompt("일 입력");
-let dayArr = ["SUN", "MON", "TUE", "WED", "THU", "FRI", "SAT"];
+const month = prompt("월 입력");
+const day = prompt("일 입력");
+const dayArr = ["SUN", "MON", "TUE", "WED", "THU", "FRI", "SAT"];
 
 function printDay(month, day) {
-  let result = new Date(`2020/${month}/${day}`).getDay();
+  const result = new Date(`2020/${month}/${day}`).getDay();
   return dayArr[result];
 }
 printDay(month, day);
