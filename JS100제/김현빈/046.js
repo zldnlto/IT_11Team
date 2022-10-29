@@ -11,4 +11,6 @@ function sum() {
   for (let i = 1; i <= 20; i++) {
     num += i;
   }
+  return num.split("").map(i => +i).reduce((a,b)=>a+b)
 }
+function sum()
