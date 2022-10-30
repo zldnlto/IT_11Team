@@ -4,4 +4,9 @@
 
 // 이를 이용하여 현재 연도(2019)를 출력해보세요.
 
-//답 : 곧 알게 되겠지! 추후 답 올릴 예정!
+//답 :
+
+let date = new Date();
+let ms = date.getTime();
+let year = 1000 * 60 * 60 * 24 * 365;
+console.log(Math.floor(ms / year) + 1970);
