@@ -4,7 +4,7 @@
 
 // 이를 이용하여 현재 연도(2019)를 출력해보세요.
 
-//답 :
+//답:
 
 let date = new Date();
 let ms = date.getTime();
